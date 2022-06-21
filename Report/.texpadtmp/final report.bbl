@@ -1,0 +1,23 @@
+\begin{thebibliography}{1}\itemsep=-1pt
+
+\bibitem{10.5555/1756006.1756025}
+Dumitru Erhan, Yoshua Bengio, Aaron Courville, Pierre-Antoine Manzagol, Pascal
+  Vincent, and Samy Bengio.
+\newblock Why does unsupervised pre-training help deep learning?
+\newblock {\em J. Mach. Learn. Res.}, 11:625–660, mar 2010.
+
+\bibitem{https://doi.org/10.48550/arxiv.1512.03385}
+Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
+\newblock Deep residual learning for image recognition, 2015.
+
+\bibitem{https://doi.org/10.48550/arxiv.2002.07839}
+Blake Woodworth, Kumar~Kshitij Patel, Sebastian~U. Stich, Zhen Dai, Brian
+  Bullins, H.~Brendan McMahan, Ohad Shamir, and Nathan Srebro.
+\newblock Is local sgd better than minibatch sgd?, 2020.
+
+\bibitem{https://doi.org/10.48550/arxiv.1905.00546}
+I.~Zeki Yalniz, Hervé Jégou, Kan Chen, Manohar Paluri, and Dhruv Mahajan.
+\newblock Billion-scale semi-supervised learning for image classification,
+  2019.
+
+\end{thebibliography}
