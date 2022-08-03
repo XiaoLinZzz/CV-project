@@ -19,7 +19,8 @@ this, we can use deep learning model trained on the specific
 data set.
 
 
-[Intro.pdf](https://github.com/XiaoLinZzz/CV-project/blob/main/Report/1.pdf)
+![1-1](https://user-images.githubusercontent.com/65701285/182684119-2f01ab2d-5429-4d46-b938-0eb88e5b772d.png)
+
 
 ## 1. Introdcution
   In this project, we implemented the recognition of five
@@ -83,6 +84,8 @@ layers. As can be seen from Table 1, the four adopted tricks
 have achieved good results, and the entire model has learned
 more discriminative features.
 
+
+[Table: Accuracy - Tricks]
 Trick1 | Trick2 | Trick3 | Trick4 | Accuracy |
 --- | --- | --- | --- |--- |
 N | N | N | N | 71.3% | 
@@ -96,5 +99,50 @@ Figure 3. Figure 2 represents the accuracy curve and the
 Figure 3 represents the loss curve after applying the different tricks respectively.
 
 
+![2-1](https://user-images.githubusercontent.com/65701285/182684241-8bf869c3-67ce-435a-8d6e-95c6cd17938c.png)
+<p align="center">
+    [Figure: Accuracy under different tricks adopted]
+</p>
+
+![3-1](https://user-images.githubusercontent.com/65701285/182684480-424d4c49-2739-4a52-bdb9-12198d8e0cd0.png)
+<p align="center">
+    [Figure: Losses under different tricks adopted]
+</p>
 
 
+## 5. Observation
+
+As shown in Figure 2, the training accuracy of the baseline is rising, while the test accuracy is falling, and the difference between the accuracy is getting higher and higher.
+This shows that the baseline easily falls into overfitting, and
+the entire network does not learn good features. As can
+be seen from Figure 3, the test loss in the baseline fluctuates greatly in the later stage, indicating that the generalization of the baseline is poor. The adopted series of methods
+can solve the above problems well, the network has learned
+more discriminative features, and the generalization of the
+network has also been improved.
+
+
+## 6. Conclusion
+
+Flower classification is a task of fine-grained image classification. Fine-grained images have large intra-class differences and small inter-class differences. How to learn
+more discriminative features is the core of this task. For
+this reason, the deeper network resnet18 was adopted, and
+the pre-training method with different learning rates on different layers and SGD optimizer were adopted to improve
+the efficiency of the entire network. The final classification
+accuracy reached 92.6%, and the flops was 3.59G.
+
+## References
+[1] Dumitru Erhan, Yoshua Bengio, Aaron Courville, PierreAntoine Manzagol, Pascal Vincent, and Samy Bengio. Why
+does unsupervised pre-training help deep learning? J. Mach.
+Learn. Res., 11:625–660, mar 2010. 1
+
+[2] Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun.
+Deep residual learning for image recognition, 2015. 1
+
+[3] Blake Woodworth, Kumar Kshitij Patel, Sebastian U. Stich,
+Zhen Dai, Brian Bullins, H. Brendan McMahan, Ohad
+Shamir, and Nathan Srebro. Is local sgd better than minibatch
+sgd?, 2020. 1
+
+[4] I. Zeki Yalniz, Herve J ´ egou, Kan Chen, Manohar Paluri, and ´
+Dhruv Mahajan. Billion-scale semi-supervised learning for
+image classification, 2019. 1
